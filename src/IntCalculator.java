@@ -1,31 +1,37 @@
-class IntCalculator {
-    private int state;
-
-    public IntCalculator(int initialState) {
-        this.state = initialState;
+public class IntCalculator
+{
+    public int state;
+    public IntCalculator(int initialValue)
+    {
+        this.state = initialValue;
     }
 
-    public IntCalculator add(int value) {
+    public IntCalculator add(int value)
+    {
         this.state += value;
         return this;
     }
 
-    public IntCalculator subtract(int value) {
+    public IntCalculator subtract(int value)
+    {
         this.state -= value;
         return this;
     }
 
-    public IntCalculator multiply(int value) {
+    public IntCalculator multiply(int value)
+    {
         this.state *= value;
         return this;
     }
 
-    public int result() {
+    public int result()
+    {
         return this.state;
     }
 
-    public IntCalculator clear() {
+    public IntCalculator clear()
+    {
         this.state = 0;
         return this;
-    }
+ }
 }
