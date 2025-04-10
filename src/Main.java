@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
         IntCalculator calculator = new IntCalculator(10);
